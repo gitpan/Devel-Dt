@@ -1,0 +1,66 @@
+NAME
+    Devel::Dt - Emulates command line flag -Dt but better
+
+VERSION
+    Version 0.01
+
+SYNOPSIS
+    Use the module and it'll immediately begin acting like you'd started
+    your perl with -Dt.
+
+     perl -MDevel::Dt -e 'print q(hi)'
+
+    The above program results in the following output. There is an
+    outstanding bug that the arguments to the operations aren't being
+    dumped.
+
+     (?:?)  leavesub=0x84f6778
+     (?:?)  const=0x84f6620
+     (?:?)  negate=0x84f67f8
+     (?:?)  enter=0x817cc78
+     (-e:1)  nextstate=0x816d480
+     (-e:1)  pushmark=0x8165818
+     (-e:1)  const=0x816d618
+     (-e:1)  print=0x816d568
+     (-e:1)  leave=0x816d4b8
+
+AUTHOR
+    Joshua ben Jore, "<jjore at cpan.org>"
+
+BUGS
+    Please report any bugs or feature requests to "bug-devel-dt at
+    rt.cpan.org", or through the web interface at
+    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Devel-Dt>. I will be
+    notified, and then you'll automatically be notified of progress on your
+    bug as I make changes.
+
+SUPPORT
+    You can find documentation for this module with the perldoc command.
+
+        perldoc Devel::Dt
+
+    You can also look for information at:
+
+    *   RT: CPAN's request tracker
+
+        <http://rt.cpan.org/NoAuth/Bugs.html?Dist=Devel-Dt>
+
+    *   AnnoCPAN: Annotated CPAN documentation
+
+        <http://annocpan.org/dist/Devel-Dt>
+
+    *   CPAN Ratings
+
+        <http://cpanratings.perl.org/d/Devel-Dt>
+
+    *   Search CPAN
+
+        <http://search.cpan.org/dist/Devel-Dt>
+
+ACKNOWLEDGEMENTS
+COPYRIGHT & LICENSE
+    Copyright 2008 Joshua ben Jore, all rights reserved.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
