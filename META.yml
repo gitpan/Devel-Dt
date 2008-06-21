@@ -1,7 +1,7 @@
 --- #YAML:1.0
 name:                Devel-Dt
-version:             0.01
-abstract:            Emulates command line flag -Dt but better
+version:             0.02
+abstract:            Kind of emulates command line flag -Dt on normal perl
 license:             ~
 author:              
     - Joshua ben Jore <jjore@cpan.org>
