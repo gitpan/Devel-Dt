@@ -1,4 +1,8 @@
 package Devel::Dt;
+BEGIN {
+  $Devel::Dt::VERSION = '0.04';
+}
+# ABSTRACT: Kind of emulates command line flag -Dt on normal perl
 
 use warnings;
 use strict;
@@ -50,18 +54,19 @@ BEGIN {
     Runops::Trace::enable_global_tracing( \&dt );
 }
 
+
+() = -.0
+
+__END__
+=pod
+
 =head1 NAME
 
 Devel::Dt - Kind of emulates command line flag -Dt on normal perl
 
-=cut
+=head1 VERSION
 
-our $VERSION = '0.03';
-
-
-
-
-
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -69,7 +74,7 @@ Use the module and it'll immediately begin acting like you'd started
 your perl with -Dt.
 
  perl -MDevel::Dt -e 'print q(hi)'
- 
+
 The above program results in the following output. There is an
 outstanding bug that the arguments to the operations aren't being
 dumped.
@@ -84,11 +89,6 @@ dumped.
  (-e:1)  print=0x816d568
  (-e:1)  leave=0x816d4b8
 
-
-
-
-
-
 =head1 FUNCTIONS
 
 =over
@@ -99,20 +99,9 @@ A L<Runops::Trace> hook, installed as a mandatory hook.
 
 =back
 
-
-
-
-
-
-
 =head1 AUTHOR
 
 Joshua ben Jore, C<< <jjore at cpan.org> >>
-
-
-
-
-
 
 =head1 BUGS
 
@@ -120,17 +109,11 @@ Please report any bugs or feature requests to C<bug-devel-dt at rt.cpan.org>, or
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Devel-Dt>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
-
-
-
-
-
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
     perldoc Devel::Dt
-
 
 You can also look for information at:
 
@@ -154,17 +137,7 @@ L<http://search.cpan.org/dist/Devel-Dt>
 
 =back
 
-
-
-
-
-
 =head1 ACKNOWLEDGEMENTS
-
-
-
-
-
 
 =head1 COPYRIGHT & LICENSE
 
@@ -173,7 +146,16 @@ Copyright 2008 Joshua ben Jore, all rights reserved.
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
 
+=head1 AUTHOR
+
+Josh Jore <jjore@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2011 by Josh Jore.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut
 
-() = -.0
